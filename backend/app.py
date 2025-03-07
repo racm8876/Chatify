@@ -886,6 +886,6 @@ def handle_stop_typing(data):
         }, room=online_users[target_id])
 @app.route('/')
 def index():
-    return jsonify({'message': 'backend is running!'})
+    return "Backend is running ...!"
 if __name__ == '__main__':
     socketio.run(app, debug=True, host='0.0.0.0', port=5000)
